@@ -40,6 +40,7 @@
     <Compile Include="server.js" />
     <Content Include="package.json" />
     <Content Include="public\assets\favicon.ico" />
+    <Content Include="public\assets\images\img-08.jpg" />
     <Content Include="public\css\bootstrap.min.css" />
     <Content Include="public\js\DetailsController.js" />
     <Content Include="public\js\HomeController.js" />

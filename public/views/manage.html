@@ -10,6 +10,9 @@
                     <th>Img URL</th>
                     <th></th>
                 </tr>
+                <tr ng-show="!dishes">
+                    <td colspan="6">Nothing to show...</td>
+                </tr>
                 <tr ng-repeat="dish in dishes">
                     <td>{{$index+1}}</td>
                     <td>{{dish._id}}</td>
