@@ -1,0 +1,17 @@
+﻿<div class="hero-full-wrapper">
+    <div class="grid">
+        <div class="gutter-sizer"></div>
+        <div class="grid-sizer"></div>
+        <div class="grid-item" ng-repeat="dish in dishes" ng-init="onRendered()">
+            <img class="img-responsive" alt="" ng-src="{{dish.img}}">
+            <a href="#!/details/{{dish._id}}" class="project-description">
+                <div class="project-text-holder">
+                    <div class="project-text-inner">
+                        <h3>{{dish.name}}</h3>
+                        <p>Discover more</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
