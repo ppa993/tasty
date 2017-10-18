@@ -3730,7 +3730,7 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-    background-color: transparent;
+    background-color: white;
     border-color: transparent
 }
 
@@ -4513,6 +4513,9 @@ button:focus {
     td.visible-xs, th.visible-xs {
         display: table-cell !important
     }
+    main {
+        margin-top: 51px !important;
+    }
 }
 
 @media (max-width:767px) {
@@ -4876,7 +4879,7 @@ main {
     -o-transition: left .2s linear;
     transition: left .2s linear;
     left: -240px;
-    top: 52px;
+    top: 50px;
     padding: 20px
 }
 
