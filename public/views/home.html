@@ -2,7 +2,7 @@
     <div class="grid">
         <div class="gutter-sizer"></div>
         <div class="grid-sizer"></div>
-        <div class="grid-item" ng-repeat="dish in dishes" ng-init="onRendered()">
+        <div class="grid-item" ng-repeat="dish in dishes" ng-init="onRendered($index)">            
             <img class="img-responsive" alt="" ng-src="{{dish.img}}">
             <a href="#!/details/{{dish._id}}" class="project-description">
                 <div class="project-text-holder">

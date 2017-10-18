@@ -4,8 +4,11 @@
 	app.controller('HomeController', function ($scope, $http) {
 
         ///////// GATHER DISHES IN STYLE /////////
-		$scope.onRendered = function () {
-			masonryBuild();
+        $scope.onRendered = function (c) {
+            //only run once on last item
+            if (c == $scope.dishes.length - 1) {
+                masonryBuild();
+            }
         }
 
 
