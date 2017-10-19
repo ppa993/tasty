@@ -29,19 +29,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="mongodb\mongodb-script.js" />
-    <Compile Include="public\js\angular-route.js" />
-    <Compile Include="public\js\angular.js" />
+    <Compile Include="public\assets\js\angular-route.js" />
+    <Compile Include="public\assets\js\angular.js" />
     <Compile Include="public\js\app.js" />
-    <Compile Include="public\js\bootstrap.min.js" />
     <Compile Include="public\js\DishesController.js" />
-    <Compile Include="public\js\jquery.min.js" />
-    <Compile Include="public\js\style-script.js" />
+    <Compile Include="public\assets\js\style-script.js" />
     <Compile Include="routes\dishes.js" />
     <Compile Include="server.js" />
     <Content Include="package.json" />
     <Content Include="public\assets\favicon.ico" />
     <Content Include="public\assets\images\img-08.jpg" />
-    <Content Include="public\css\bootstrap.min.css" />
     <Content Include="public\js\DetailsController.js" />
     <Content Include="public\js\HomeController.js" />
     <Content Include="public\views\about.html" />
@@ -74,6 +71,7 @@
     <Folder Include="public\" />
     <Folder Include="public\assets\" />
     <Folder Include="public\assets\images\" />
+    <Folder Include="public\assets\js\" />
     <Folder Include="public\js\" />
     <Folder Include="public\css\" />
     <Folder Include="public\views\" />

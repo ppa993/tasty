@@ -13,7 +13,7 @@
                 $scope.error = "Could not retrieve the dish detail, error: " + err.message;
             };
 
-            $http.get(location.origin + "/dishes/" + $routeParams.id)
+            $http.get(location.origin + "/api/dishes/" + $routeParams.id)
                 .then(onGetDishCompleted, onGetDishError);
         
     })

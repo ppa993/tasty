@@ -1,7 +1,7 @@
 (function () {
-    var app = angular.module('tasty', ["ngRoute"]);
+    var app = angular.module('tasty', ['ngRoute']);
 
-    app.config(function ($routeProvider) {
+    app.config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: "/views/home.html",
@@ -28,6 +28,9 @@
                 templateUrl: "/views/manage.html",
                 controller: "DishesController"
             })
-            .otherwise({redirectTo: '/'});
+            .otherwise({ redirectTo: '/' });
+
+        // use the HTML5 History API, use this along with the base tag in index file
+        $locationProvider.html5Mode(true);
     });
 }());

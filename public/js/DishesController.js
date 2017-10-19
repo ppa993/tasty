@@ -15,7 +15,7 @@
                 $scope.error = "Could not retrieve the dish list, error: " + err.message;
             };
 
-            $http.get(location.origin + "/dishes/")
+            $http.get(location.origin + "/api/dishes/")
                 .then(onGetListCompleted, onGetListError);
         }
 
@@ -40,7 +40,7 @@
                 alert("Could not add new dish, error: " + err.message);
             };
 
-            $http.post(location.origin + "/dishes/", newDish)
+            $http.post(location.origin + "/api/dishes/", newDish)
                 .then(onPostCompleted, onPostError);
         };
 
@@ -62,7 +62,7 @@
                     alert("Could not delete the dish from the list, error: " + response.msg);
                 };
 
-                $http.delete(location.origin + "/dishes/" + _id)
+                $http.delete(location.origin + "/api/dishes/" + _id)
                     .then(onDeleteCompleted, onDeleteError);
             }
             else {

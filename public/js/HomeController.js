@@ -24,7 +24,7 @@
                 $scope.error = "Could not retrieve the dish list, error: " + err.message;
             };
 
-            $http.get(location.origin + "/dishes/")
+            $http.get(location.origin + "/api/dishes/")
                 .then(onGetListCompleted, onGetListError);
         }
 
