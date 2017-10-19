@@ -28,6 +28,15 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\account\index.controller.js" />
+    <Compile Include="app\app-services\flash.service.js" />
+    <Compile Include="app\app-services\user.service.js" />
+    <Compile Include="app\app.js" />
+    <Compile Include="app\home\index.controller.js" />
+    <Compile Include="controllers\api\users.controller.js" />
+    <Compile Include="controllers\app.controller.js" />
+    <Compile Include="controllers\login.controller.js" />
+    <Compile Include="controllers\register.controller.js" />
     <Compile Include="mongodb\mongodb-script.js" />
     <Compile Include="public\assets\js\angular-route.js" />
     <Compile Include="public\assets\js\angular.js" />
@@ -36,6 +45,12 @@
     <Compile Include="public\assets\js\style-script.js" />
     <Compile Include="routes\dishes.js" />
     <Compile Include="server.js" />
+    <Compile Include="services\user.service.js" />
+    <Content Include="app\account\index.html" />
+    <Content Include="app\app-content\app.css" />
+    <Content Include="app\home\index.html" />
+    <Content Include="app\index.html" />
+    <Content Include="config.json" />
     <Content Include="package.json" />
     <Content Include="public\assets\favicon.ico" />
     <Content Include="public\assets\images\img-08.jpg" />
@@ -65,8 +80,19 @@
     <Content Include="public\views\details.html" />
     <Content Include="public\views\services.html" />
     <Content Include="README.md" />
+    <Content Include="views\login.ejs" />
+    <Content Include="views\partials\footer.ejs" />
+    <Content Include="views\partials\header.ejs" />
+    <Content Include="views\register.ejs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\account\" />
+    <Folder Include="app\app-content\" />
+    <Folder Include="app\app-services\" />
+    <Folder Include="app\home\" />
+    <Folder Include="controllers\" />
+    <Folder Include="controllers\api\" />
     <Folder Include="mongodb\" />
     <Folder Include="public\" />
     <Folder Include="public\assets\" />
@@ -76,6 +102,9 @@
     <Folder Include="public\css\" />
     <Folder Include="public\views\" />
     <Folder Include="routes\" />
+    <Folder Include="services\" />
+    <Folder Include="views\" />
+    <Folder Include="views\partials\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
