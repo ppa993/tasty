@@ -3,7 +3,7 @@
 
     app.config(function ($routeProvider, $locationProvider) {
         $routeProvider
-            .when('/app', {
+            .when('/', {
                 templateUrl: "/views/home.html",
                 controller: "HomeController"
             })
@@ -28,20 +28,9 @@
                 templateUrl: "/views/manage.html",
                 controller: "DishesController"
             })
-            .otherwise({ redirectTo: '/app' });
+            .otherwise({ redirectTo: '/' });
 
         // use the HTML5 History API, use this along with the base tag in index file
         $locationProvider.html5Mode(true);
-    });
-
-
-    // manually bootstrap angular after the JWT token is retrieved from the server
-    $(function () {
-        // get JWT token from server
-        $.get('/app/token', function (token) {
-            window.jwtToken = token;
-
-            angular.bootstrap(document, ['tasty']);
-        });
     });
 }());
