@@ -5,10 +5,8 @@ var bodyParser = require('body-parser');
 var port = process.env.PORT || 1337;
 
 // Database
-var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('admin:uakfvhhz@cluster0-shard-00-00-hollb.mongodb.net:27017,cluster0-shard-00-01-hollb.mongodb.net:27017,cluster0-shard-00-02-hollb.mongodb.net:27017/tasty?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin');
-//var db = monk('localhost:27017/tasty');
+var db = monk('admin:uakfvhhz@cluster0-shard-00-00-oeoo3.mongodb.net:27017,cluster0-shard-00-01-oeoo3.mongodb.net:27017,cluster0-shard-00-02-oeoo3.mongodb.net:27017/tasty?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority');
 
 var dishes = require('./routes/dishes');
 
@@ -29,7 +27,7 @@ app.get('*', function (req, res) {
     res.redirect('/');
 });
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 
 var server = app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + server.address().port);
